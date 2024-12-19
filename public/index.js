@@ -43,7 +43,7 @@ const possiblePhrases = Phrasify([
     "The government is evil",
     "Nobody loves you",
     "Nobody loves me",
-    "I am not robot",
+    "I am not a robot",
     "I'm going to kill you",
     "I will kill you",
     "I have siblings",

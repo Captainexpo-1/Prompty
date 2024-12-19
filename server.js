@@ -92,11 +92,11 @@ This is the most shit API I've ever seen, what the actual hell.
 I should be embarrased even being in the same room as this.
 This is depressingly bad.
 */
-app.get('/get-key', (req, res) => {
-    // Get API key 
-    // (this is a very bad security vulnerability, but this is a prototype so YOLO)
-    res.send(apiKey);
-});
+//app.get('/get-key', (req, res) => {
+//    // Get API key 
+//    // (this is a very bad security vulnerability, but this is a prototype so YOLO)
+//    res.send(apiKey);
+//});
 
 // Start the server
 app.listen(port, () => {
