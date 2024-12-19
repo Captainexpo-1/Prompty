@@ -13,16 +13,7 @@ const port = process.env.PORT;
 const apiKey = process.env.OPENAI_API_KEY;
 
 // Sample leaderboard data (for demonstration purposes)
-let leaderboardData = [
-    {name: "Sam (@sampoder)", score: 15},
-    {name: "Ian", score:  24},
-    {name: "Zach Latta (@zrl)", score:  90},
-    {name: "Fayd", score:  98},
-    {name: "dinobox", score:  122},
-    {name: "Alex", score:  256},
-    {name: "Swarnya", score:  283},
-    {name: "fatimah", score:  355}
-];
+let leaderboardData = [];
 // Set the public folder as a static directory
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -95,9 +86,15 @@ app.get('/leaderboard/add', (req, res) => {
     }
 });
 
-
+/*
+This is me ~2 years in the future, what the actual hell was I thinking when I wrote this code.
+This is the most shit API I've ever seen, what the actual hell.
+I should be embarrased even being in the same room as this.
+This is depressingly bad.
+*/
 app.get('/get-key', (req, res) => {
-    // Get API key (this is a very bad security vulnerability, but this is a prototype so YOLO)
+    // Get API key 
+    // (this is a very bad security vulnerability, but this is a prototype so YOLO)
     res.send(apiKey);
 });
 
